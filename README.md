@@ -1,2 +1,2 @@
 # codyfight-game-client
-Public Codyfight game client
+Public Codyfight Game Client (JavaScript)

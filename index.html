@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Codyfight | Game Controller</title>
+
+    <!-- jQuery library from https://code.jquery.com/  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+    </script>
+
+    <!--  Codyfight game client (JavaScript)  -->
+    <script src="lib/client.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <style>
+        .title {
+            text-align: center;
+        }
+        .container {
+            margin: 25px;
+        }
+        .content-box {
+            display: block;
+            margin-bottom: 15px;
+        }
+        .separator {
+            margin: 30px 0 30px 0;
+        }
+        .button {
+            width: 100px;
+        }
+
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Codyfight Game Controller</h2>
+
+        <form>
+            <div class="content-box">
+                <label for="api-key">Your Robot API Key</label>
+                <br/>
+                <input id="api-key" name="api-key" type="text"/>
+            </div>
+
+            <div class="content-box">
+                <label for="game-mode">Game Mode</label>
+                <br/>
+                <select id="game-mode" name="game-mode">
+                    <option value="2">Random Robot</option>
+                    <option value="1">Custom Robot</option>
+                    <option value="3">Competitive Arena</option>
+                </select>
+            </div>
+
+            <div class="content-box">
+                <label for="opponent-name">Opponent Robot Name | <i>used only in custom game mode</i></label>
+                <span><i></i></span>
+                <br/>
+                <input id="opponent-name" name="opponent-name" type="text"/>
+            </div>
+
+            <input type="hidden" name="play" value="true">
+            <button type="submit" class="button">Play!</button>
+        </form>
+
+        <hr class="separator"/>
+
+        <form action="https://www.codyfight.com/spectate" target="_blank">
+            <label for="robot-name">Robot Name</label>
+            <br/>
+            <input id="robot-name" name="player" type="text"/>
+            <button type="submit" class="button">Spectate</button>
+        </form>
+    </div>
+</body>
+</html>
