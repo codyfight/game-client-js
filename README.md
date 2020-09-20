@@ -10,7 +10,7 @@
 
 ### How to use this game client?
 
-[Download](https://github.com/driule/codyfight-game-client/archive/master.zip) repository content or or clone it with `git` [see documentation](https://docs.github.com/en/github/getting-started-with-github/set-up-git)
+[Download](https://github.com/driule/codyfight-game-client/archive/master.zip) repository content or clone it with `git` <a href="https://docs.github.com/en/github/getting-started-with-github/set-up-git" target="_blank">see documentation</a>
 
 Game client script. Edit this file and implement your robot movement.
 > [lib/client.js](https://github.com/driule/codyfight-game-client/blob/master/lib/client.js)
