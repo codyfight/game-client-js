@@ -10,93 +10,88 @@
             crossorigin="anonymous">
     </script>
 
-    <!--  Codyfight game client (JavaScript)  -->
+    <!--  Codyfight game client script  -->
     <script src="lib/client.js"></script>
+
+    <!--  Controller script to initialize a new game  -->
+    <script src="controller.js"></script>
 
     <link rel="icon" type="image/png" href="favicon.ico">
     <style>
+        .src {
+            font-family: "Courier New", cursive;
+        }
         .title {
             text-align: center;
         }
         .container {
             margin: 25px;
         }
-        .content-box {
-            display: block;
-            margin-bottom: 15px;
+        .footer {
+            text-align: center;
         }
         .separator {
             margin: 30px 0 30px 0;
         }
         .button {
             width: 100px;
+            padding: 5px;
         }
 
+        a {
+            color: #7288B3;
+            text-decoration: none;
+            outline: 0;
+        }
+        a:hover {
+            color: #1d68a7;
+            text-decoration: none;
+            outline: 0;
+        }
         input {
             margin: 5px;
+            padding: 5px;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2 class="title">Codyfight Game Controller</h2>
+        <h2 class="title src">Codyfight Game Controller</h2>
 
-        <form>
-            <div class="content-box">
-                <label for="api-key">Your Robot API Key</label>
+        <hr class="separator"/>
+        <div>
+            <label for="c-key" style="display: block; margin-bottom: 10px">
                 <br/>
-                <input id="api-key" name="api-key" type="text"/>
-            </div>
-
-            <div class="content-box">
-                <label for="game-mode">Game Mode</label>
-                <br/>
-                <select id="game-mode" name="game-mode">
-                    <option value="2">Random Robot</option>
-                    <option value="1">Custom Robot</option>
-                    <option value="3">Competitive Arena</option>
-                </select>
-            </div>
-
-            <div class="content-box">
-                <label for="opponent-name">Opponent Robot Name | <i>used only in custom game mode</i></label>
-                <span><i></i></span>
-                <br/>
-                <input id="opponent-name" name="opponent-name" type="text"/>
-            </div>
-
-            <input type="hidden" name="play" value="true">
-            <button type="submit" class="button">Play!</button>
-        </form>
+                Input here your robot identification to start a new game in random mode
+            </label>
+            <input id="c-key" name="player" type="text" placeholder="CKey"/>
+            <button id="start-game" class="button src">Play</button>
+        </div>
 
         <hr class="separator"/>
         <ul>
             <li>
-                <a href="https://github.com/driule/codyfight-game-client/archive/master.zip" target="_blank">Download</a> source code ZIP archive<br>
+                <span class="src">Codyfighter</span> will be controlled by <a href="lib/client.js" target="_blank">this script</a>
             </li>
             <li>
-                Visit <a href="https://github.com/driule/codyfight-game-client" target="_blank">Github Repository</a><br/>
+                <a href="https://github.com/driule/codyfight-game-client/archive/master.zip" target="_blank">Download</a> full source code ZIP archive<br>
+            </li>
+            <li>
+                Explore game controller <a href="https://github.com/driule/codyfight-game-client" target="_blank">Github Repository</a><br/>
+            </li>
+            <li>
+                Read more about game at our <a href="https://www.codyfight.com" target="_blank">website</a>
             </li>
         </ul>
-        <hr class="separator"/>
-
-        <form action="https://www.codyfight.com/spectate" target="_blank">
-            <label for="robot-name">Robot Name</label>
-            <br/>
-            <input id="robot-name" name="player" type="text"/>
-            <button type="submit" class="button">Spectate</button>
-        </form>
 
         <hr class="separator"/>
-
         <embed type="text/html" id="game-widget" src="" style="width:100%; height:100vh;"/>
-    </div>
 
-    <div class="footer">
-        <label>&#169; 2020 Codyfight, all rights reserved</label>
-        <span>|</span>
-        <a href="https://www.codyfight.com" target="_blank">Codyfight</a>
+        <hr class="separator"/>
+        <div class="footer">
+            <label>&#169; <a href="https://www.codyfight.com" target="_blank">Codyfight</a> - all rights reserved</label>
+        </div>
     </div>
 </body>
 </html>
