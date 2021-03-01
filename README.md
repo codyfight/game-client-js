@@ -1,6 +1,6 @@
 # Public Codyfight Game Client (JavaScript)
 
-# ![alt text](https://codyfight.com/assets/logo.svg "Codyfight Logo")
+# ![alt text](https://codyfight.com/logo.svg "Codyfight Logo")
 
 ### Useful Links
 
