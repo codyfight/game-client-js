@@ -4,16 +4,19 @@
 
 ### Useful Links
 
-- Game Controller: https://client.codyfight.com
-- Public website: https://codyfight.com
-- Surveillance System: https://zvimbalynas.lt
+- [Robot Example](https://github.com/codyfight/js-codyfighter)
+- [API documentation](https://codyfight.com/api)
+- [Surveillance System](https://zvimbalynas.lt)
 
-### How to use this game client?
+### How to start?
 
-[Download](https://github.com/codyfight/js-client/archive/master.zip) repository content or clone it with `git` <a href="https://docs.github.com/en/github/getting-started-with-github/set-up-git" target="_blank">see documentation</a>
+This library is a single JavaScript file, and you reference it with the HTML `<script>` tag
+(notice that the `<script>` tag should be inside the `<head>` section):
 
-Game client script. Edit this file and implement your robot movement.
-> [lib/client.js](https://github.com/codyfight/js-client/blob/master/lib/client.js)
+```
+<head>
+    <script src="https://client.codyfight.com/lib/client.js"></script>
+</head>
+```
 
-Game controller HTML interface
-> [index.html](https://github.com/codyfight/js-client/blob/master/index.html)
+Alternatively, you can download [client script](https://client.codyfight.com/lib/client.js) and use it locally.
