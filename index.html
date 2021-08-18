@@ -2,20 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Codyfight | Game Controller</title>
-
-    <!-- jQuery library from https://code.jquery.com/  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-            crossorigin="anonymous">
-    </script>
-
-    <!--  Codyfight game client script  -->
-    <script src="lib/client.js"></script>
-
-    <!--  Controller script to initialize a new game  -->
-    <script src="lib/controller.js"></script>
-
+    <title>Codyfight | Game Client</title>
     <link rel="icon" type="image/png" href="favicon.ico">
     <style>
         .src {
@@ -32,10 +19,6 @@
         }
         .separator {
             margin: 30px 0 30px 0;
-        }
-        .button {
-            width: 100px;
-            padding: 5px;
         }
 
         a {
@@ -57,34 +40,16 @@
 
 <body>
     <div class="container">
-        <h2 class="title src">Codyfight Game Controller</h2>
+        <h2 class="title src">Codyfight Game Client</h2>
 
         <hr class="separator"/>
-        <div>
-            <label for="c-key" class="src" style="display: block; margin-bottom: 10px">
-                Input here your Codyfighter identification key to start a new game in random mode
-            </label>
-            <input id="c-key" name="player" type="text" placeholder="CKey"/>
-            <button id="start-game" class="button src">Play</button>
-            <br/>
-            <small>
-                <b>Please note</b> that your robot will be controlled by
-                <a href="lib/client.js" target="_blank">this script</a>, and it will move fully randomly.
-            </small>
-        </div>
-
-        <hr class="separator"/>
-        <h3>Quick Start</h3>
-        <label>In order to inspire intelligence for your Codyfighter, develop a program that controls its movement decisions via Codyfight Game API.</label>
+        <h3>How to use?</h3>
         <ul>
             <li>
-                <a href="https://github.com/codyfight/js-client/archive/master.zip" target="_blank">Download</a> full source code ZIP archive<br>
+                Read <a href="https://www.codyfight.com/api" target="_blank">API documentation</a>
             </li>
             <li>
-                Explore game controller <a href="https://github.com/codyfight/js-client" target="_blank">Github Repository</a><br/>
-            </li>
-            <li>
-                Read more about the game API at our <a href="https://www.codyfight.com" target="_blank">website</a>
+                Check example <a href="https://github.com/codyfight/js-codyfighter" target="_blank">robot implementation</a>
             </li>
         </ul>
 
