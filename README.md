@@ -1,11 +1,9 @@
-# Public Codyfight Game Client (JavaScript)
-
-# ![alt text](https://codyfight.com/logo.svg "Codyfight Logo")
+# Game Client
 
 ### Useful Links
 
-- [Robot Example](https://github.com/codyfight/js-codyfighter)
-- [API documentation](https://codyfight.com/api)
+- Client usage example: [codyfight-bot](https://github.com/codyfight/js-codyfighter)
+- Read more about game API on the [website](https://codyfight.com/api)
 - [Surveillance System](https://zvimbalynas.lt)
 
 ### How to start?
@@ -19,4 +17,4 @@ This library is a single JavaScript file, and you reference it with the HTML `<s
 </head>
 ```
 
-Alternatively, you can download [client script](https://client.codyfight.com/lib/client.js) and use it locally.
+Alternatively, you can use the [client script](https://client.codyfight.com/lib/client.js) to host it locally or on a server.
